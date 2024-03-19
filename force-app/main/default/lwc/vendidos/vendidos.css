@@ -1,0 +1,53 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    z-index: 10;
+    border-color: #ff4500;
+}
+
+.hot-sale {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ff4500;
+    color: #ffffff;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-bottom-right-radius: 8px;
+}
+
+.product__image {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.product__info {
+    padding: 10px;
+}
+
+.product__name, .product__price {
+    margin: 0;
+}
+.section-title {
+    font-size: 24px; /* Ajusta el tamaño de la fuente según necesites */
+    text-align: center; /* Centra el texto */
+    margin-top: 20px; /* Añade un margen superior para separarlo del contenido anterior */
+    margin-bottom: 20px; /* Añade un margen inferior para separarlo del contenido siguiente */
+    color: #333; /* Cambia el color del texto si lo deseas */
+}
+

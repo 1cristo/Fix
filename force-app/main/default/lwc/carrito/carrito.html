@@ -1,0 +1,11 @@
+<template>
+    <div>
+        <h2>Carrito de Compras</h2>
+        <ul>
+            <template for:each={cart} for:item="product">
+                <li key={product.name}>{product.name} - ${product.price}</li>
+            </template>
+        </ul>
+        <p>Total: ${total}</p>
+    </div>
+</template>
