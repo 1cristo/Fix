@@ -1,0 +1,18 @@
+<!-- productCard.html -->
+<template>
+    <h2 class="product-title">Conoce nuestras ofertas</h2>
+    <div class="product-container">
+        <template for:each={products} for:item="product">
+            <div key={product.id} class="product-card">
+                <img class="product__image" src={product.imageUrl} alt={product.name}/>
+                <div class="product-info">
+                    <p class="product-name">{product.name}</p>
+                    <p class="product-price original-price">{product.originalPrice}</p>
+                    <p class="product-price sale-price">{product.salePrice}</p>
+                </div>
+                <a class="product-link" href={product.productUrl}>Ver producto</a>
+                <div class="discount-badge">-{product.discount}%</div>
+            </div>
+        </template>
+    </div>
+</template>

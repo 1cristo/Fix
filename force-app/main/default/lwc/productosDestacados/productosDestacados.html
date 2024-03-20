@@ -1,0 +1,16 @@
+<template>
+    <div class="highlight-container">
+        <h2 class="highlight-title">Productos destacados</h2>
+        <div class="product-list">
+            <template for:each={products} for:item="product">
+                <div key={product.id} class="product-card">
+                    <img class="product__image" src={product.imageUrl} alt={product.name} />
+                    <p class="product-name">{product.name}</p>
+                    <p class="product-price">{product.price}</p>
+                    <p class="product-shipping">{product.shipping}</p>
+                    <a class="product-link" href={product.productUrl}>Ver producto</a>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>

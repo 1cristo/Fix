@@ -1,0 +1,14 @@
+:host {
+    .slds-box {
+        border: 1px solid #d8dde6; /* SLDS color for borders */
+    }
+    .slds-text-heading_small {
+        color: #16325c; /* SLDS color for heading text */
+    }
+    lightning-icon {
+        margin-right: 0.5rem;
+    }
+    span {
+        vertical-align: middle;
+    }
+}
